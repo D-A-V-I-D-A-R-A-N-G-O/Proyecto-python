@@ -1,5 +1,5 @@
 print("Adivina donde esta la reina de corazones")
-cartas = [" ___   ___   ___", "|J  | |Q  | |8  |", "| ♦ | | ♥ | | ♣ |", "|__J| |__Q| |__8|"]  
+cartas = [" ___   ___   ___", "|J  | |Q  | |8  |", "| ♦ | | ♥ | | ♣ |", "|__J| |__Q| |__8|"]
 
 
 def funcion_jugar():
@@ -29,16 +29,12 @@ def funcion_verificar_marcador(x):
 
 
 while True:
-
     opcion = input("> Seleccione jugar [J], tabla de posiciones [T], salir [S]:")
     if opcion == "J" or opcion == "j":
         funcion_jugar()
-
     elif opcion == "S" or opcion == "s":
         funcion_salir()
-
     elif opcion == "T" or opcion == "t":
         funcion_tabla()
-
     else:
         print("Por favor ingrese un valor valido")
