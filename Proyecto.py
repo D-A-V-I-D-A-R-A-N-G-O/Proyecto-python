@@ -11,7 +11,7 @@ def funcion_jugar():
 
 
 def funcion_salir():
-    print("Hasta luego")
+    print("¡Hasta luego!")
     exit()
 
 
