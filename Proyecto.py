@@ -1,5 +1,11 @@
 print("Adivina donde esta la reina de corazones")
 cartas = [" ___   ___   ___", "|J  | |Q  | |8  |", "| ♦ | | ♥ | | ♣ |", "|__J| |__Q| |__8|"]
+intercambios = """
+Intercambio izquierda (I) con la del medio (M)...
+Intercambio derecha (D) con la del medio (M)...
+Intercambio la del medio (M) con izquierda (I)...
+Intercambio derecha (D) con izquierda (I)...
+Intercambio izquierda (I) con derecha (D)..."""
 
 
 def funcion_jugar():
@@ -7,7 +13,11 @@ def funcion_jugar():
     print(f"!{nombre} mantén tus ojos abiertos mientras las cartas se mueven¡")
     for i in cartas:
         print(i)
-    print(f"Lo siento {nombre}, esta seccion aun esta en desarrollo")
+    enter = input("> Presiona ENTER cuando estés listo(a)")
+    if enter == "":
+        print(f"Lo siento {nombre}, esta seccion aun esta en desarrollo")
+    else:
+        print("Nos vemos la proxima", nombre)
 
 
 def funcion_salir():
